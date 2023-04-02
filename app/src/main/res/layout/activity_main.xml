@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--    /*-->
+<!--    * Final Project - Mobile Library Manager Admin App-->
+<!--    *-->
+<!--    * CMPR.X413 - Java Programming II-->
+<!--    * @author GaudencioGalarza-->
+<!--    * @03-28-2023-->
+<!--    *-->
+<!--    */-->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainLibraryMenuActivity">
+
+
+
+    <Button
+        android:id="@+id/manage_users"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manage Users"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/manage_books"
+        app:layout_constraintStart_toStartOf="@+id/manage_books"
+        app:layout_constraintTop_toBottomOf="@+id/manage_books" />
+
+    <Button
+        android:id="@+id/manage_books"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Manage Books Inventory"
+        app:layout_constraintEnd_toEndOf="@+id/add_book"
+        app:layout_constraintStart_toStartOf="@+id/add_book"
+        app:layout_constraintTop_toBottomOf="@+id/add_book" />
+
+    <Button
+        android:id="@+id/add_book"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:text="Add Book"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
